@@ -1,0 +1,5 @@
+/**index.wxss**/
+
+Page{
+  background: #F8F8F8;
+}

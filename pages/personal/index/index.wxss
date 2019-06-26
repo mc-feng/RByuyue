@@ -1,0 +1,44 @@
+/* pages/personal/index/index.wxss */
+page{
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  background: #F8F8F8;
+}
+.header{
+  width: 100%;
+  height: 100rpx;
+  background: #FFF2F1;
+  display: flex;
+  align-items: center;
+}
+.user{
+  display: block;
+  width: 80rpx;
+  height: 80rpx;
+  border-radius: 50%;
+  overflow: hidden;
+  box-shadow: 0 8rpx 16rpx 0 rgba(0,0,0,0.17);
+  left: 80rpx;
+  position: absolute;
+  z-index: 1
+}
+.user-font{
+  font-size: 24rpx;
+  color: #000000;
+  margin-left: 190rpx;
+  font-weight: 600
+}
+.headerB{
+  height: 100rpx;
+  width: 184rpx;
+  position: absolute;
+  left: 0;
+  transform: rotate(180deg)
+}
+.headerL{
+  height: 100rpx;
+  width: 184rpx;
+  position: absolute;
+  right: 0;
+}

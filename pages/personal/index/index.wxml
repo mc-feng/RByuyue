@@ -1,0 +1,10 @@
+<!--pages/personal/index/index.wxml-->
+<view class='header'>
+  <open-data type="userAvatarUrl" class='user'></open-data>
+  <view class='user-font'>
+    <view>Hi <open-data type="userNickName" lang="zh_CN"></open-data> </view>
+    <view>元气满满的一天又开始了！</view>
+  </view>
+  <image src="../../../images/personal/headerB.png" class="headerB"></image>
+  <image src="../../../images/personal/headerB.png" class="headerL"></image>
+</view>
