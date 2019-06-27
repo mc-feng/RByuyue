@@ -1,2 +1,27 @@
 <!--index.wxml-->
-<view>这个是主页内容</view>
+<view class='header'>
+  <view class='user-font'>
+    <view>Hi<open-data class="name" type="userNickName" lang="zh_CN"></open-data>预约次数：</view>
+    <view>鹰演 <text class="times">1</text> 次，骨密度/一体机/中医评估任选 <text class="times">1</text> 次</view>
+  </view>
+  <image src="../../img/headerB.png" class="headerB"></image>
+  <image src="../../img/headerB.png" class="headerL"></image>
+</view>
+<view class="content">
+  <view class="project-item project-gray">
+    <image class="item-img" src="../../img/yy.jpg"></image>
+    <view class="item-msg">
+      <text class="item-title">鹰演无创全身健康扫描</text>
+      <text class="item-intro">评估身体各组织和器官的生物,活性与功能状况，风险预警</text>
+    </view>
+    <view class="yy-btn">预约</view>
+  </view>
+  <view class="project-item">
+    <image class="item-img" src="../../img/yy.jpg"></image>
+    <view class="item-msg">
+      <text class="item-title">鹰演无创全身健康扫描</text>
+      <text class="item-intro">评估身体各组织和器官的生物,活性与功能状况，风险预警</text>
+    </view>
+    <view class="yy-btn">预约</view>
+  </view>
+</view>

@@ -1,0 +1,47 @@
+<!--pages/order/index.wxml-->
+<view class="top">
+  <i></i>
+  <text>选择时间（可多选时段）</text>
+  <view class="order-status">
+    <image src="../../img/yued.png" class='order-no order-icon'></image>
+    <text class="order-no-text">已约满</text>
+  </view>
+  <view class="order-status">
+    <image src="../../img/yu.png" class='order-yes order-icon'></image>
+    <text class="order-yes-text">可预约</text>
+  </view>
+</view>
+<view class="date">
+  <view class="date-left">
+    <scroll-view class="date-scroll"  scroll-y="true">
+    <view>
+      <view class="date-item {{index==dateActive?'date-item-active':''}}" wx:for="{{dayList}}" wx:key="{{index}}" bindtap="chooseDate" data-index="{{index}}" data-year="{{item.year}}" data-month="{{item.date}}" data-day="{{item.time}}">
+        <text class="date-text">{{item.date<10?('0'+item.date):item.date}}月{{item.time<10?('0'+item.time):item.time}}日</text>
+        <text class="time-text">(周{{item.week}})</text>
+      </view>
+      </view>
+    </scroll-view>
+    <view class="pull-btn" bindtap="scrollDown">
+      <icon class="iconfont local"></icon>
+    </view>
+  </view>
+  <scroll-view scroll-y='true' style='height:864rpx;'>
+    <checkbox-group class="date-right">
+    <checkbox wx:for="{{timesList}}" wx:key="{{index}}" class="date-right-item {{item.canSelect==true?'choose-ok':'choose-no'}} {{item.isSelect==1?'choose-active':''}}  " bindtap="{{item.canSelect==true?'choose':''}}" data-index="{{index}}" data-timesId="{{item.timesId}}" value="{{item.id}}" data-period="{{item.startTime}}~{{item.endTime}}">
+
+      
+    <view class="time-middle">
+      <image src="../../img/yued.png" class='yue' wx:if="{{item.canSelect==false}}"></image>
+      <image src="../../img/yu.png" class='yue' wx:if="{{(item.canSelect==true)&&(item.isSelect==0)}}"></image>
+      <image src="../../img/yub.png" class='yue' wx:if="{{(item.isSelect==1)&&(item.canSelect==true)}}"></image>
+    <text>{{item.startTime}}~{{item.endTime}}</text>
+    </view>
+    </checkbox>
+  </checkbox-group>
+  </scroll-view>
+  
+</view>
+
+<button class="order-btn" bindtap="confirm">确认预约</button>
+
+

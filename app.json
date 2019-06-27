@@ -1,6 +1,7 @@
 {
   "pages": [
     "pages/index/index",
+    "pages/order/index",
     "pages/personal/index/index"
   ],
   "window": {

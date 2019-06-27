@@ -46,7 +46,7 @@
 					"id": 0,
 					"name": "预约页面",
 					"pathName": "pages/order/index",
-					"query": "roomId=1&&roomname=圆桌骑士",
+					"query": "",
 					"scene": null
 				}
 			]
