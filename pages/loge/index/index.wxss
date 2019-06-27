@@ -1,0 +1,105 @@
+/* pages/loge/index/index.wxss */
+page{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%
+}
+.warp{
+  background: rgba(255,255,255,0.95);
+  box-shadow: 0 4rpx 16rpx 0 rgba(0,0,0,0.50);
+  border-radius: 18rpx;
+  width: 644rpx;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+}
+.title{
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: #F9F9F9;
+  box-shadow: 0 4rpx 8rpx 0 rgba(0,0,0,0.20);
+  border-radius: 0 0 18rpx 0;
+  text-align: center;
+  height: 72rpx;
+  width: 192rpx;
+  line-height: 72rpx;
+  font-size: 28rpx;
+  color: #F77557;
+}
+.content-warp{
+  margin-top: 56rpx;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+}
+.header{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 34rpx;
+}
+.header-image{
+  width: 46rpx;
+  height: 46rpx;
+}
+.header-font{
+  font-size: 36rpx;
+  color: #000000;
+  min-width: 82rpx;
+  margin-left: 12rpx;
+}
+.input-warp{
+  display: flex;
+  align-items: center;
+  margin-bottom: 24rpx;
+}
+.input-name{
+  font-size: 32rpx;
+  color: #000000;
+  width: 128rpx;
+}
+.zhanwei{
+  display: inline-block;
+  width: 1em;
+  height: 42rpx;
+}
+.input-content{
+  border: 2rpx solid #F77557;
+  border-radius: 14rpx;
+  margin-left: 26rpx;
+  width: 300rpx;
+  font-size: 14px;
+  color: #BFBFBF;
+  height: 62rpx;
+  display: flex;
+  align-items: center
+}
+.input-content input{
+  margin-left: 22rpx;
+}
+.qiehuan{
+  font-size: 24rpx;
+  color: #29BFFF;
+  text-decoration: underline;
+  width: 100%
+}
+.buttun{
+  background: #F77557;
+  border-radius: 8px;
+  width: 292rpx;
+  height: 90rpx;
+  text-align: center;
+  line-height: 90rpx;
+  font-size: 16px;
+  color: #FFFFFF;
+  margin-top: 44rpx;
+  margin-bottom: 52rpx;
+}
+.tu2{
+  width: 68rpx;
+  height: 46rpx;
+}

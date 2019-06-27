@@ -1,0 +1,52 @@
+<!--pages/loge/index/index.wxml-->
+<block wx:if="{{yuangong}}">
+  <view class="warp">
+    <view class="title">客户预约</view>
+    <view class="content-warp">
+      <view class="header">
+        <image src="../../../images/tabs/personal-d.png" class="header-image"></image>
+        <view class="header-font">登录</view>
+      </view>
+      <view class="input-warp">
+          <view class="input-name">姓<text class="zhanwei"></text>名：</view>
+          <view class="input-content">
+            <input placeholder="请输入订单姓名"></input>
+          </view>
+      </view>
+      <view class="input-warp">
+        <view class="input-name">手机号：</view>
+        <view class="input-content">
+          <input placeholder="请输入手机号"></input>
+        </view>
+      </view>
+      <view class="qiehuan" bindtap="change">员工预约登录通道</view>
+      <view class="buttun" bindtap="submit">登录</view>
+    </view>
+  </view>
+</block>
+<block wx:else>
+ <view class="warp">
+  <view class="title">员工预约</view>
+    <view class="content-warp">
+      <view class="header">
+        <image src="../../../images/tabs/ticket.png" class="header-image tu2"></image>
+        <view class="header-font">登录</view>
+      </view>
+      <view class="input-warp">
+          <view class="input-name">卡编号：</view>
+          <view class="input-content">
+            <input placeholder="请输入卡编号"></input>
+          </view>
+      </view>
+      <view class="input-warp">
+        <view class="input-name">卡密码：</view>
+        <view class="input-content">
+          <input placeholder="请输入卡密码"></input>
+        </view>
+      </view>
+      <view class="qiehuan" bindtap="change">客户预约登录通道</view>
+      <view class="buttun" bindtap="submit">登录</view>
+  </view>
+ </view>
+</block>
+

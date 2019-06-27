@@ -6,6 +6,9 @@ Page({
   data: {
   },
   onLoad: function () {
+    wx.reLaunch({
+      url: '/pages/loge/index/index',
+    })
     // var that = this;
     // that.checkOpenId();
   },
