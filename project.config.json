@@ -40,12 +40,26 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": 0,
+			"current": 2,
 			"list": [
 				{
 					"id": 0,
 					"name": "预约页面",
 					"pathName": "pages/order/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "体检项目",
+					"pathName": "pages/personal/project/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "联系我们",
+					"pathName": "pages/personal/contact/index",
 					"query": "",
 					"scene": null
 				}

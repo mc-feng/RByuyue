@@ -1,0 +1,10 @@
+/* pages/personal/contact/index.wxss */
+page{
+  background: #F8F8F8;
+}
+.contact{
+  margin:56rpx 30rpx 0;
+  background:#fff;
+  height:350rpx;
+  border-radius: 18rpx;
+}
