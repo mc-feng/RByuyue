@@ -73,3 +73,27 @@
     </form>
   </view>
 </view>
+<vtoast flow="{{success}}">
+  <view class="msg-box success-box">
+  <view class="tips">
+      <view class="tips-box">
+        <!-- <icon class="iconfont tips-icon right-icon"></icon> -->
+        <image src="../../img/chenggong.png"></image>
+      </view>
+  </view>
+    <form class="msg-form">
+      <text class="tips-title">预约成功</text>
+      <text class="success-tips">您的会议室预约成功</text>
+      <text class="yy-time">预约时间</text>
+      <view class="project-items clearfix">
+        <text class="yy-date-value">{{month_choose}}月{{day_choose}}日</text>
+        <view class="yy-time-value">
+          <text wx:for="{{timePeriod}}" wx:key="{{index}}">{{item.startTime}}~{{item.endTime}}</text>
+        </view>
+      </view>
+      <text class="tips-text">请准时到达，有疑问可以联系咨询～</text>
+      <button class="confirm" bindtap="success_ok">确认</button>
+      <text class="tips-text">详细信息可在个人中心-预约记录查看</text>
+    </form>
+  </view>
+</vtoast>

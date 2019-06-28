@@ -10,7 +10,7 @@ Page({
     dateTimestamp:[],
     dateActive:'0',
     show:true,
-    hideModal:true
+    success:false
   },
 
   /**
@@ -52,13 +52,20 @@ Page({
     })
   },
   confirm(){
-    this.animate()
+    this.animate();
+    this.success();
   },
   /*切换日期*/
   chooseDate(e){
     var that = this;
     that.setData({
       dateActive: e.currentTarget.dataset.index
+    })
+  },
+  /*预约成功弹窗弹出*/
+  success() {
+    this.setData({
+      success: !this.data.success
     })
   },
   /* 动画弹出 */
