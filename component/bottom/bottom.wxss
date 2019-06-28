@@ -1,6 +1,6 @@
-/* component/bottom/bottom.wxss */
+component/bottom/bottom.wxss
 /*模态框*/
-.modals{
+ .modals{
   position:fixed; z-index: 999; top:0; left: 0; right:0; bottom: 0;
 }
 .modals-cancel{
@@ -10,4 +10,4 @@
   position:absolute; z-index:10001; bottom:0; left:0; right:0; padding:30rpx; height:300rpx; background-color: #fff;
 }
 /*动画前初始位置*/
-.bottom-pos{-webkit-transform:translateY(100%);transform:translateY(100%);}
+ .bottom-pos{-webkit-transform:translateY(100%);transform:translateY(100%);} 

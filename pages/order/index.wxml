@@ -15,8 +15,8 @@
   <view class="date-left">
     <scroll-view class="date-scroll"  scroll-y="true">
     <view>
-      <view class="date-item {{index==dateActive?'date-item-active':''}}" wx:for="{{dayList}}" wx:key="{{index}}" bindtap="chooseDate" data-index="{{index}}" data-year="{{item.year}}" data-month="{{item.date}}" data-day="{{item.time}}">
-        <text class="date-text">{{item.date<10?('0'+item.date):item.date}}月{{item.time<10?('0'+item.time):item.time}}日</text>
+      <view class="date-item {{index==dateActive?'date-item-active':''}}" wx:for="{{date}}" wx:key="{{index}}" bindtap="chooseDate" data-index="{{index}}" data-year="{{item.year}}" data-month="{{item.month}}" data-day="{{item.day}}">
+        <text class="date-text">{{item.month}}月{{item.day}}日</text>
         <text class="time-text">(周{{item.week}})</text>
       </view>
       </view>
@@ -26,6 +26,8 @@
     </view>
   </view>
   <scroll-view scroll-y='true' style='height:864rpx;'>
+    <view class="remark">备注：该项目每时段可预约 <text class="weight">1</text>人
+    </view>
     <checkbox-group class="date-right">
     <checkbox wx:for="{{timesList}}" wx:key="{{index}}" class="date-right-item {{item.canSelect==true?'choose-ok':'choose-no'}} {{item.isSelect==1?'choose-active':''}}  " bindtap="{{item.canSelect==true?'choose':''}}" data-index="{{index}}" data-timesId="{{item.timesId}}" value="{{item.id}}" data-period="{{item.startTime}}~{{item.endTime}}">
 
@@ -45,3 +47,29 @@
 <button class="order-btn" bindtap="confirm">确认预约</button>
 
 
+<view class="up-complete" animation="{{animation}}">
+  <view class="up-box">
+    <text class="up-title">请完善体检客户信息</text>
+    <form class="clearfix">
+      <view class="up-item">
+        <text class="up-item-value">姓名:</text>
+        <input class="up-item-ipt"></input>
+      </view>
+      <view class="up-item">
+        <text class="up-item-value">性别:</text>
+        <radio-group name="radio-group" class="up-item-radio">
+          <label><radio value="先生"/>先生</label>
+          <label><radio value="女士"/>女士</label>
+        </radio-group>
+      </view>
+      <view class="up-item">
+        <text class="up-item-value">身份证号:</text>
+        <input class="up-item-ipt" placeholder='请输入身份证号'></input>
+      </view>
+      <view class="up-item">
+        <text class="up-item-value">手机号:</text>
+        <input class="up-item-ipt" placeholder='请填写手机号'></input>
+      </view>
+    </form>
+  </view>
+</view>

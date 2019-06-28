@@ -1,3 +1,6 @@
 {
-  "navigationBarTitleText": "PICC健康上海体检预约"
+  "navigationBarTitleText": "PICC健康上海体检预约",
+  "usingComponents": {
+    "vbottom": "/component/bottom/bottom"
+  }
 }

@@ -6,10 +6,22 @@ Page({
   data: {
   },
   onLoad: function () {
-    // var that = this;
+    var that = this;
     // that.checkOpenId();
+    that.getProject();
   },
   onShow: function () { 
+
+  },
+  /*获取项目*/
+  getProject(){
+    http.getProject({
+      success(res){
+        console.log(res)
+      },fail(){
+
+      }
+    })
   },
   //防止网络延迟获取不到openid
   // checkOpenId() {

@@ -1,37 +1,78 @@
 // pages/order/index.js
+import time from '../../utils/util.js'
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    date:{}
+    date:[],
+    dateTimestamp:[],
+    dateActive:'0',
+    show:true,
+    hideModal:true
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    this.getDate()
+    this.getDate();
   },
   getDate(){
+    var that = this;
     var now = new Date();
-    var year = now.getFullYear();
-    var month = now.getMonth() + 1;
-    var day = now.getDate();
-    if (month < 10) {
-      month = "0" + month;
+    var timestamp = (new Date().getTime());
+    for(var i=0;i<7;i++){
+      timestamp = timestamp + 60*60*24*1000;
+      that.data.dateTimestamp.push(timestamp);
     }
-    if (day < 10) {
-      day = "0" + day;
+    for (var i = 0; i < that.data.dateTimestamp.length;i++){
+      var dates = time.formatTimeTwo(that.data.dateTimestamp[i], 'Y-M-D-w-h-m-s');
+      var arr = dates.split('-');
+      if (arr[3]=='00'){
+        arr[3] = '日';
+      } else if (arr[3] == '01'){
+        arr[3] = '一';
+      } else if (arr[3] == '02'){
+        arr[3] = '二';
+      } else if (arr[3] == '03'){
+        arr[3] = '三';
+      } else if (arr[3] == '04') {
+        arr[3] = '四';
+      } else if (arr[3] == '05') {
+        arr[3] = '五';
+      } else if (arr[3] == '06') {
+        arr[3] = '六';
+      }else{}
+      that.data.date.push({ year: arr[0], month: arr[1], day: arr[2],week:arr[3]});
     }
-    var date = year+'-'+month+'-'+day;
-    var timestamp = Date.parse(date);
-    console.log(timestamp)
-    // for(var i=0;i<7;i++){
-    //   date.push(timestamp+)
-    // }
+    that.setData({
+      date:that.data.date
+    })
   },
+  confirm(){
+    this.animate()
+  },
+  /*切换日期*/
+  chooseDate(e){
+    var that = this;
+    that.setData({
+      dateActive: e.currentTarget.dataset.index
+    })
+  },
+  /* 动画弹出 */
+  animate(){
+    var animation = wx.createAnimation({
+      duration: 600,
+      timingFunction: 'ease',
+    })
+    this.animation = animation.translateY(-219).step();
+    this.setData({
+      animation: animation.export()
+    })
+  },
+ 
   /**
    * 生命周期函数--监听页面初次渲染完成
    */

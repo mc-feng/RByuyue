@@ -4,7 +4,7 @@ Component({
       type:Boolean,
       value:false,
       observer: function (news, olds, path) {
-        console.log(news, olds)
+        
       }
     }
   },

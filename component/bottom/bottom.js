@@ -11,7 +11,7 @@ Component({
    * 组件的初始数据
    */
   data: {
-    hideModal: true, //模态框的状态  true-隐藏  false-显示
+    hideModal: false, //模态框的状态  true-隐藏  false-显示
     animationData: {},//
   },
 

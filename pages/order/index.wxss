@@ -3,6 +3,8 @@ Page{
   background:#F8F8F8;
   padding-bottom:122rpx;
 }
+.clearfix:after{content:".";display:block;height:0;clear:both;visibility:hidden}
+.clearfix{zoom:1}
 /*头部start*/
 .top{
   padding:0 28rpx;
@@ -182,6 +184,9 @@ Page{
 .choose-ok icon{
   color: #F03F24;
 }
+.choose-no{
+  border:1px solid #B3B5B8;
+}
 .choose-no icon{
   color: #BFBFBF;
 }
@@ -242,6 +247,7 @@ checkbox .wx-checkbox-input{
   height:110rpx;
   line-height:110rpx;
   position:fixed;
+  z-index:10;
   bottom:0;
   left:0;
   font-family: PingFangSC-Regular;
@@ -549,4 +555,108 @@ margin-right:10rpx;
 }
 .place-meet{
   color: #BFBFBF;
+}
+
+.remark{
+  height:130rpx;
+  line-height:130rpx;
+  font-family: PingFangSC-Medium;
+  font-size: 24rpx;
+  color: #929292;
+  text-align:center;
+}
+.remark .weight{
+  font-family: PingFangSC-Medium;
+  font-size: 24rpx;
+  color: #F77557;
+  line-height: 130rpx;
+}
+.up-complete{
+  width:100%;
+  height:328rpx;
+  position:fixed;
+  bottom:-328rpx;
+  z-index:1;
+  background: rgba(255,255,255,0.95);
+  box-shadow: 0 4rpx 16rpx 0 rgba(0,0,0,0.50);
+  border-top-right-radius: 18rpx;
+  border-top-left-radius: 18rpx;
+}
+.up-box{
+  width:400rpx;
+  height:100%;
+  margin:0 auto;
+  padding-top:40rpx;
+}
+.up-title{
+  width:100%;
+  display:block;
+  font-family: PingFangSC-Medium;
+  font-size: 32rpx;
+  color: #000000;
+  font-weight:600;
+  height:44rpx;
+  margin:0 0 22rpx 0;
+}
+.up-item{
+  height:50rpx;
+}
+.up-item-value{
+  float:left;
+  height:100%;
+  line-height:50rpx;
+  display:block;
+  font-family: PingFangSC-Regular;
+  font-size: 32rpx;
+  color: #000000;
+  width:160rpx;
+}
+.up-item-ipt{
+  min-height:40rpx;
+  height:40rpx;
+  width:240rpx;
+  margin-top:5rpx;
+  float:left;
+  display:inline-block;
+  font-size: 28rpx;
+}
+.up-item-radio{
+  font-family: PingFangSC-Regular;
+  font-size: 28rpx;
+  height:50rpx;
+  color: #000000;
+  float:left;
+}
+.up-item-radio label{
+  height:40rpx;
+  display:inline-block;
+  margin-top:5rpx;
+  margin-right:32rpx;
+}
+radio .wx-radio-input{
+   border-radius: 50%;/* 圆角 */
+   width: 16rpx;
+   height: 16rpx;
+}
+/* 选中后的 背景样式 （红色背景 无边框 可根据UI需求自己修改） */
+radio .wx-radio-input.wx-radio-input-checked{
+   border: none;
+   background: red;
+}
+/* 选中后的 对勾样式 （白色对勾 可根据UI需求自己修改） */
+radio .wx-radio-input.wx-radio-input-checked::before{
+   border-radius: 50%;/* 圆角 */
+   width: 16rrpx; /* 选中后对勾大小，不要超过背景的尺寸 */
+   height: 16rpx; /* 选中后对勾大小，不要超过背景的尺寸 */
+   line-height: 16rpx;
+   text-align: center;
+   font-size:30rpx; /* 对勾大小 30rpx */
+   color:#fff; /* 对勾颜色 白色 */
+   background: transparent;
+   transform:translate(-50%, -50%) scale(1);
+   -webkit-transform:translate(-50%, -50%) scale(1);
+}
+form{
+  width:100%;
+  display:block;
 }
