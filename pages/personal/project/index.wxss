@@ -1,1 +1,27 @@
 /* pages/personal/project/index.wxss */
+page{
+  background: #F8F8F8;
+}
+.content{
+  margin:20rpx 20rpx 0;
+  background:#fff;
+  padding:40rpx 0 0 0;
+}
+.title{
+  height:80rpx;
+  padding-left:14rpx;
+  line-height:80rpx;
+  font-family: PingFangSC-Medium;
+  font-size: 36rpx;
+  color: #FFFFFF;
+  letter-spacing: 2rpx;
+  background: #F77557;
+}
+.details{
+  padding:30rpx 8rpx;
+  font-family: PingFangSC-Regular;
+  font-size: 32rpx;
+  color: #000000;
+  letter-spacing: 2rpx;
+  line-height: 44rpx;
+}

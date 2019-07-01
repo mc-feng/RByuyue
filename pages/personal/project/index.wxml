@@ -1,1 +1,10 @@
 <!--pages/personal/project/index.wxml-->
+<view class="content">
+  <view class="matter">
+    <view class="title">1.鹰演无创全身健康扫描</view>
+    <view class="details">法国鹰演无创全身健康扫描系统为法国独创的</view>
+    <view class="title">说明:</view>
+    <view class="details">法国鹰演无创全身健康扫描系统为法国独创的</view>
+  </view>
+ 
+</view>

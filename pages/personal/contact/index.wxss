@@ -2,9 +2,48 @@
 page{
   background: #F8F8F8;
 }
+text{
+  display:block;
+  float:left;
+}
 .contact{
   margin:56rpx 30rpx 0;
+  padding:62rpx 0 0 76rpx;
   background:#fff;
-  height:350rpx;
+  height:288rpx;
   border-radius: 18rpx;
+  display:flex;
+  flex-direction: column;
+}
+.contact-row{
+  height:32rpx;
+  margin-bottom:32rpx;
+}
+.logo-row{
+  height:130rpx;
+}
+.logo{
+  width:130rpx;
+  height:130rpx;
+  float:left;
+}
+.title{
+  float:left;
+  height:130rpx;
+  line-height:130rpx;
+  font-family: PingFangSC-Regular;
+  font-size: 38rpx;
+  color: #2B3C6A;
+}
+.icon-img{
+  width:20rpx;
+  height:28rpx;
+  margin:0 12rpx 0 40rpx;
+}
+.icon-text{
+  font-family: PingFangSC-Regular;
+  font-size: 22rpx;
+  color: #2B3C6A;
+  text-align: left;
+  line-height: 32rpx;
 }
