@@ -1,15 +1,15 @@
 <!--pages/personal/contact/index.wxml-->
 <view class="contact">
   <view class="logo-row">
-    <image class="logo"></image>
+    <image class="logo" src="../../../img/logo.jpeg"></image>
     <text class="title">上海PICC健康管理中心</text>
   </view>
   <view class="contact-row">
-    <image class="icon-img"></image>
+    <image class="icon-img" src="../../../img/address.png"></image>
     <text class="icon-text">地址：上海市黄浦区制造局路130号园林大厦14F</text>
   </view>
   <view class="contact-row">
-    <image class="icon-img"></image>
+    <icon class="iconfont icon-img phone" bindtap="makePhone"></icon>
     <text class="icon-text">联络电话：95591-3</text>
   </view>
 </view>

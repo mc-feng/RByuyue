@@ -40,7 +40,7 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": 2,
+			"current": 7,
 			"list": [
 				{
 					"id": 0,
@@ -60,6 +60,41 @@
 					"id": -1,
 					"name": "联系我们",
 					"pathName": "pages/personal/contact/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "登录页",
+					"pathName": "pages/login/login",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "注册页",
+					"pathName": "pages/login/register",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "忘记密码",
+					"pathName": "pages/login/forget",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "基本资料",
+					"pathName": "pages/login/info",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "个人中心",
+					"pathName": "pages/personal/index/index",
 					"query": "",
 					"scene": null
 				}

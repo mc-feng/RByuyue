@@ -68,7 +68,7 @@ Page{
   overflow:hidden;
 }
 .date-scroll{
-  height:784rpx;
+  height:786rpx;
 }
 .date-left{
   width:200rpx;

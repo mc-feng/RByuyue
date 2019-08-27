@@ -1,0 +1,52 @@
+<!--pages/login/info.wxml-->
+<view class="register">
+  <view class="topbar">
+    <view class='top'>
+      <image src='../../img/mine.png' class='top-icon'></image>
+      <text>填写基本资料</text>
+    </view>
+  </view>
+  <view class='main'>
+    <form class='content clearfix' bindsubmit="formSubmit">
+      <view class="content-item">
+        <view class="content-left">
+          <text>姓名</text>
+          <i>:</i>
+        </view>
+        <input placeholder='请输入姓名' placeholder-class='placeholder' name='name'></input>
+      </view>
+      <view class="content-item">
+        <view class="content-left">
+          <text>身份证号</text>
+          <i>:</i>
+        </view>
+        <input placeholder='请输入身份证号' placeholder-class='placeholder' bindblur='parsingId' name='Idcard'></input>
+      </view>
+      <view class="content-item">
+        <view class="content-left">
+          <text>性别</text>
+          <i>:</i>
+        </view>
+        <radio-group class="radio-group" bindchange="radioChange" name="sex">
+          <label class="radio">
+            <radio value="男" disabled checked="{{sex=='男'?true:false}}"/>先生
+          </label>
+          <label class="radio">
+            <radio value="女" disabled checked="{{sex=='女'?true:false}}"/>女士
+          </label>
+        </radio-group>
+      </view>
+      <view class="content-item">
+        <view class="content-left">
+          <text>生日</text>
+          <i>:</i>
+        </view>
+        <view class='birthday'>{{date}}</view>
+        <!-- <picker mode="date" value="{{date}}" bindchange="bindDateChange" class='choose_birth'>
+          <view class="picker">{{choose_date}}</view>
+        </picker> -->
+      </view>
+      <button form-type="submit" class="res-btn">完成认证</button>
+    </form>
+  </view>
+</view>

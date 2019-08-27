@@ -52,6 +52,13 @@ App({
   //     }
   //   })
   // },
+  error(msg){
+    wx.showToast({
+      title: msg,
+      icon: "none",
+      duration: 2000
+    })
+  },
   globalData: {
     openId:null
   }

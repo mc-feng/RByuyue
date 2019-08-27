@@ -75,15 +75,15 @@
 </view>
 <vtoast flow="{{success}}">
   <view class="msg-box success-box">
-  <view class="tips">
-      <view class="tips-box">
-        <!-- <icon class="iconfont tips-icon right-icon"></icon> -->
-        <image src="../../img/chenggong.png"></image>
-      </view>
-  </view>
+    <view class="tips">
+        <view class="tips-box">
+          <!-- <icon class="iconfont tips-icon right-icon"></icon> -->
+          <image src="../../img/chenggong.png"></image>
+        </view>
+    </view>
     <form class="msg-form">
       <text class="tips-title">预约成功</text>
-      <text class="success-tips">您的会议室预约成功</text>
+      <text class="success-tips">您的体检预约成功</text>
       <text class="yy-time">预约时间</text>
       <view class="project-items clearfix">
         <text class="yy-date-value">{{month_choose}}月{{day_choose}}日</text>

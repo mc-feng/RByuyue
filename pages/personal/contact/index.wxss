@@ -39,6 +39,7 @@ text{
   width:20rpx;
   height:28rpx;
   margin:0 12rpx 0 40rpx;
+  float:left;
 }
 .icon-text{
   font-family: PingFangSC-Regular;
@@ -46,4 +47,11 @@ text{
   color: #2B3C6A;
   text-align: left;
   line-height: 32rpx;
+}
+.phone:before{
+   content:'\e612';
+  font-weight:600;
+  font-size:22rpx;
+  float:left;
+  color:#F03F24;
 }

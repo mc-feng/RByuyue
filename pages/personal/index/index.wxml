@@ -1,10 +1,60 @@
 <!--pages/personal/index/index.wxml-->
-<view class='header'>
-  <open-data type="userAvatarUrl" class='user'></open-data>
-  <view class='user-font'>
-    <view>Hi <open-data type="userNickName" lang="zh_CN"></open-data> </view>
-    <view>元气满满的一天又开始了！</view>
+<view class='personal'>
+  <view class='header'>
+    <open-data type="userAvatarUrl" class='user'></open-data>
+    <text class='login_text'>登录/注册</text>
+    <image src='' class='right'></image>
   </view>
-  <image src="../../../images/personal/headerB.png" class="headerB"></image>
-  <image src="../../../images/personal/headerB.png" class="headerL"></image>
+  <view class='header'>
+    <open-data type="userAvatarUrl" class='user_login'></open-data>
+    <view class='info'>
+      <text class="info-h1">王笑笑 女</text>
+      <text class="info-h2">账号：180****9673</text>
+    </view>
+    <image src='' class='right'></image>
+  </view>
+  <view class='header'>
+    <open-data type="userAvatarUrl" class='user'></open-data>
+    <view class='info'>
+      <text class="info-h1">王笑笑 女</text>
+      <text class="info-h2">账号：180****9673</text>
+    </view>
+    <view class='fill'>完善资料</view>
+    <image src='' class='right'></image>
+  </view>
+  <view class='item'>
+    <image src='' class='icon'></image>
+    <text>我的订单</text>
+    <image src='' class='right'></image>
+  </view>
+  <view class='item'>
+    <image src='' class='icon'></image>
+    <text>我的卡包</text>
+    <image src='' class='right'></image>
+  </view>
+  <view class='item'>
+    <image src='' class='icon'></image>
+    <text>我的预约</text>
+    <image src='' class='right'></image>
+  </view>
+  <view class='item'>
+    <image src='' class='icon'></image>
+    <text>体检报告</text>
+    <image src='' class='right'></image>
+  </view>
+  <view class='item'>
+    <image src='' class='icon'></image>
+    <text>联系我们</text>
+    <image src='' class='right'></image>
+  </view>
+  <view class='item'>
+    <image src='' class='icon'></image>
+    <text>退出登录</text>
+    <image src='' class='right'></image>
+  </view>
+  <view class='item'>
+    <image src='' class='icon'></image>
+    <text>退出登录</text>
+    <image src='' class='right'></image>
+  </view>
 </view>

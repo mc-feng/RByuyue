@@ -23,10 +23,21 @@ Page({
     var that = this;
     var now = new Date();
     var timestamp = (new Date().getTime());
-    for(var i=0;i<7;i++){
-      timestamp = timestamp + 60*60*24*1000;
-      that.data.dateTimestamp.push(timestamp);
+    var h = new Date().getHours();
+    /*17点前预约第二天，17点后预约第三天*/
+    if(h<17){
+      for (var i = 0; i < 7; i++) {
+        timestamp = timestamp + 60 * 60 * 24 * 1000;
+        that.data.dateTimestamp.push(timestamp);
+      }
+    }else{
+      timestamp = timestamp + 60 * 60 * 24 * 1000;
+      for (var i = 0; i < 7; i++) {
+        timestamp = timestamp + 60 * 60 * 24 * 1000;
+        that.data.dateTimestamp.push(timestamp);
+      }
     }
+    
     for (var i = 0; i < that.data.dateTimestamp.length;i++){
       var dates = time.formatTimeTwo(that.data.dateTimestamp[i], 'Y-M-D-w-h-m-s');
       var arr = dates.split('-');

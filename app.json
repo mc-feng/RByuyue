@@ -1,6 +1,10 @@
 {
   "pages": [
     "pages/index/index",
+    "pages/login/login",
+    "pages/login/register",
+    "pages/login/forget",
+    "pages/login/info",
     "pages/order/index",
     "pages/personal/index/index",
     "pages/personal/project/index",

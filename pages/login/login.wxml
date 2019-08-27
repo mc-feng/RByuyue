@@ -1,0 +1,67 @@
+<!--pages/login/login.wxml-->
+<view class="login">
+  <view class="topbar">
+    <view class='top'>
+      <image src='../../img/mine.png' class='top-icon'></image>
+      <text>登录</text>
+    </view>
+  </view>
+  <view class='main'>
+    <view class='title'>
+      <view class="login-type {{currentTab == 0 ? 'login-active' : ''}}" bindtap="switchTab" data-current='0'>密码登录</view>
+      <view class="login-type {{currentTab == 1 ? 'login-active' : ''}}" bindtap="switchTab" data-current='1'>验证码登录</view>
+    </view>
+    <swiper current="{{currentTab}}" class='swiper' style="height:600px;" duration="300" bindchange="bindchange">
+      <swiper-item>
+        <form class='content clearfix' bindsubmit="pwFormSubmit">
+          <view class="content-item">
+            <text>手机号码</text>
+            <i>:</i>
+            <input placeholder='请输入手机号码' placeholder-class='placeholder' name='pw_phoneNum'></input>
+          </view>
+          <view class="content-item">
+            <text>密码</text>
+            <i>:</i>
+            <input placeholder='请输入密码' type='password' placeholder-class='placeholder' name='pw_password'></input>
+          </view>
+          <view class='content-option'>
+            <navigator url='/pages/login/register' class="to-register">还没账户？去注册</navigator>
+            <navigator url='/pages/login/forget' class="to-password">忘记密码？</navigator>
+          </view>
+          <button form-type="submit" class="login-btn">登录</button>
+        </form>
+      </swiper-item> 
+      <swiper-item>
+        <form class='content clearfix' bindsubmit="codeFormSubmit">
+          <view class="content-item">
+            <view class="content-left">
+              <text>手机号码</text>
+              <i>:</i>
+            </view>
+            <input placeholder='请输入手机号码' placeholder-class='placeholder' name='code_phoneNum'></input>
+          </view>
+          <view class="content-item content-flex">
+            <view class="content-left">
+              <text>验证码</text>
+              <i>:</i>
+            </view>
+            <input class='yzm' placeholder='请输入短信验证码' placeholder-class='placeholder' name='code_password'></input>
+            <view class='send'>
+              <b></b>
+              <a href="javascript:void(0)" class="getCode {{is_show?'show':'hide'}}" bindtap='sendCode'>发送验证码</a>
+              <a href="javascript:void(0)" class="getCode {{is_show?'hide':'show'}}">重发(<em>{{last_time}}</em>)秒</a>
+            </view>
+          </view>
+          <view class='content-option'>
+            <navigator url='/pages/login/register' class="to-register">还没账户？去注册</navigator>
+            <navigator url='/pages/login/forget' class="to-password">忘记密码？</navigator>
+          </view>
+          <button form-type="submit" class="login-btn">登录</button>
+        </form>
+      </swiper-item> 
+    </swiper>
+  </view>
+
+
+
+</view>

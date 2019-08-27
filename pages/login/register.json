@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "PICC健康中心",
+  "usingComponents": {
+    "vtoast": "/component/toast/toast"
+  }
+}

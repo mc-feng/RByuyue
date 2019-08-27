@@ -1,0 +1,254 @@
+/* pages/login/register.wxss */
+.clearfix:after{content:".";display:block;height:0;clear:both;visibility:hidden}
+.clearfix{zoom:1}
+/*隐藏滚动条*/
+::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+  color: transparent;
+}
+
+/*注册title*/
+.topbar{
+  position:relative;
+  height:48rpx;
+  margin-top:48rpx;
+}
+.top{
+  display:flex;
+  position: absolute;
+  top:0;
+  left:50%;
+  transform:translate(-50%,0);
+}
+.top .top-icon{
+  width:36rpx;
+  height:46rpx;
+  margin-right:14rpx;
+}
+.top text{
+  font-family: PingFangSC-Medium;
+  font-size: 36rpx;
+  color: #000000;
+  /* letter-spacing: 4rpx; */
+  font-weight: 600;
+}
+/*注册主体*/
+.main{
+  padding:0 32rpx;
+  margin-top:80rpx;
+}
+.title{
+  padding:22rpx 32rpx 20rpx 32rpx;
+  display:flex;
+  justify-content: space-around;
+}
+.login-type{
+  padding:0 18rpx;
+  font-family: PingFangSC-Regular;
+  font-size: 28rpx;
+  color: #000000;
+}
+.login-active{
+  border-bottom: 1px solid #FA6205;
+}
+.content{
+  width:100%;
+}
+.content-item{
+  border-bottom: 1px solid #EEEEEE;
+  display:flex;
+  height:100rpx;
+}
+.content-flex{
+  justify-content: space-between;
+}
+.content-option{
+  display:flex;
+  height:100rpx;
+  justify-content: space-between;
+}
+.content-option navigator{
+  font-family: PingFangSC-Regular;
+  font-size: 30rpx;
+  
+  letter-spacing: 0.48rpx;
+  line-height:100rpx;
+}
+.to-register{
+  color: #FA6205;
+}
+.to-password{
+  color: #E02020;
+}
+.content-item text{
+  line-height:100rpx;
+  display:block;
+  height:100%;
+  font-family: PingFangSC-Regular;
+  font-size: 30rpx;
+  color: #FA6205;
+  width:130rpx;
+  text-align: justify;
+  text-align-last: justify;
+  letter-spacing: 0.48rpx;
+}
+.content i{
+  font-family: PingFangSC-Regular;
+  font-size: 30rpx;
+  line-height:100rpx;
+  color: #FA6205;
+  margin-right:30rpx;
+}
+.content-item input{
+  height:100%;
+  font-family: PingFangSC-Regular;
+  font-size: 30rpx;
+  color: #000;
+  letter-spacing: 0.48rpx;
+}
+.content-left{
+  display:flex;
+  justify-content: space-between;
+}
+.yzm{
+    width:280rpx;
+    margin-right:30rpx;
+}
+.send{
+  display:flex;
+  
+}
+.content-item b{
+  width:4rpx;
+  height:88rpx;
+  margin-top:6rpx;
+  background:#F0F0F0;
+}
+.getCode{
+    display:block;
+    padding:0 20rpx;
+    height: 100rpx;
+    border-radius: 10rpx;
+    text-align:center;
+    line-height:100rpx;
+    font-family: PingFangSC-Regular;
+    font-size: 30rpx;
+    color: #0091FF;
+    letter-spacing: 0.48rpx;
+}
+.getCode em{
+  font-style:normal;
+  color:#ee2622;
+}
+.show{
+  display:block;
+}
+.hide{
+  display:none;
+}
+.placeholder{
+  color: #CCCCCC;
+}
+.res-btn{
+  background: #FA6205;
+  border-radius: 8rpx;
+  width:100%;
+  height:98rpx;
+  line-height:98rpx;
+  font-family: PingFangSC-Regular;
+  font-size: 32rpx;
+  color: #FFFFFF;
+  letter-spacing: 0.52rpx;
+  text-align: center;
+  margin-top:60rpx;
+}
+/*隐私弹框*/
+.privacy-box{
+  width:540rpx;
+  background:#fff;
+  border-radius:24rpx;
+  /* overflow:hidden; */
+  position:relative;
+  left:50%;
+  transform: translate(-50%,-50%);
+}
+.privacy-title{
+  width:100%;
+  display:block;
+  font-family: SourceHanSansCN-Bold;
+  font-weight:600;
+  font-size: 28rpx;
+  text-align:center;
+  color: #353535;
+  letter-spacing: 0;
+}
+.privacy-h1{
+  padding-top:58rpx;
+}
+.privacy-h2{
+  margin-top:24rpx;
+}
+.scroll-view_H{
+  height:380rpx;
+  margin:24rpx 0 0rpx 0;
+}
+.scroll-view_H text{
+  font-family: SourceHanSansCN-Bold;
+  font-size: 24rpx;
+  color: #353535;
+  letter-spacing: 0;
+  padding:0 20rpx;
+  display:block;
+  font-weight:600;
+}
+.tips-img{
+  width:100%;
+  height:50rpx;
+  text-align:center;
+  margin-bottom:30rpx;
+}
+.tips-img image{
+  width:26rpx;
+  height:16rpx;
+}
+.options{
+  width:100%;
+  display:flex;
+  justify-content: space-between;
+  border-bottom-left-radius: 24rpx;
+  border-bottom-right-radius: 24rpx;
+  overflow:hidden;
+}
+.options view{
+  width:50%;
+  height:86rpx;
+  line-height:86rpx;
+  text-align:center;
+  border-radius:0;
+  border:0;
+  position:static;
+}
+.no_agree{
+  background: rgba(0,0,0,0.10);
+  font-family: SourceHanSansCN-Bold;
+  font-size: 28rpx;
+  color: #353535;
+  letter-spacing: 0;
+}
+.agree{
+  background: #FA6205;
+  font-family: SourceHanSansCN-Bold;
+  font-size: 28rpx;
+  color: #FFFFFF;
+  letter-spacing: 0;
+}
+.close{
+  width:60rpx;
+  height:60rpx;
+  border-radius:50%;
+  position:absolute;
+  right:-30rpx;
+  top:-30rpx;
+  z-index:2;
+}

@@ -1,0 +1,47 @@
+<!--pages/login/forget.wxml-->
+<view class="register">
+  <view class="topbar">
+    <view class='top'>
+      <image src='../../img/mine.png' class='top-icon'></image>
+      <text>忘记密码</text>
+    </view>
+  </view>
+   <view class='main'>
+    <form class='content clearfix' bindsubmit="formSubmit">
+      <view class="content-item">
+        <view class="content-left">
+          <text>手机号码</text>
+          <i>:</i>
+        </view>
+        <input placeholder='请输入手机号码' placeholder-class='placeholder' name='phoneNum'></input>
+      </view>
+      <view class="content-item content-flex">
+        <view class="content-left">
+          <text>验证码</text>
+          <i>:</i>
+        </view>
+        <input class='yzm' placeholder='请输入短信验证码' placeholder-class='placeholder' name='code'></input>
+        <view class='send'>
+          <b></b>
+          <a href="javascript:void(0)" class="getCode {{is_show?'show':'hide'}}" bindtap='sendCode'>发送验证码</a>
+          <a href="javascript:void(0)" class="getCode {{is_show?'hide':'show'}}">重发(<em>{{last_time}}</em>)秒</a>
+        </view>
+      </view>
+      <view class="content-item">
+        <view class="content-left">
+          <text>设置密码</text>
+          <i>:</i>
+        </view>
+        <input placeholder='6-18位字母、数字或符号的密码' placeholder-class='placeholder' name='password' type='password'></input>
+      </view>
+      <view class="content-item">
+        <view class="content-left">
+          <text>确认密码</text>
+          <i>:</i>
+        </view>
+        <input placeholder='请再次输入密码' placeholder-class='placeholder' name='confirm_password' type='password'></input>
+      </view>
+      <button form-type="submit" class="res-btn">确认更改</button>
+    </form>
+  </view>
+</view>
